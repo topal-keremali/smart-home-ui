@@ -1,0 +1,47 @@
+@import "src/styles";
+@import "src/app/global-class";
+
+.sidenav-container {
+  height: calc(100vh - 64px);
+}
+
+.app-content {
+  height: 100%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.mat-list-icon {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.active {
+  color: $primary;
+  font-weight: bold;
+
+  .mat-icon {
+    color: $primary;
+  }
+}
+
+.flexExpand {
+  flex: 1 1 auto;
+}
+
+.dot{
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px
+}
+
+.offline{
+  background-color: #ff4800;
+}
+
+.online{
+  background-color: #66d466;
+}

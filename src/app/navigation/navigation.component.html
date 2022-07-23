@@ -1,0 +1,57 @@
+<div class="header">
+  <mat-toolbar color="primary" class="mat-toolbar">
+    <button mat-icon-button (click)="isExpanded = !isExpanded">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <h1>{{currentPage()}}</h1>
+    <span class="flexExpand"></span>
+    <span class="dot" [ngClass]="connection() ? 'online':  'offline'"></span>
+    <div>{{ time | date: 'HH:mm:ss' }}</div>
+  </mat-toolbar>
+  <mat-sidenav-container class="sidenav-container" autosize>
+    <mat-sidenav #sidenav mode="side" opened="true">
+      <mat-nav-list>
+        <mat-list-item routerLink="/dashboard" routerLinkActive="active">
+          <span *ngIf="isExpanded || isShowing">{{"Dashboard"}}</span>
+          <mat-icon mat-list-icon>home</mat-icon>
+        </mat-list-item>
+        <mat-list-item routerLink="/living" routerLinkActive="active">
+          <span *ngIf="isExpanded || isShowing">{{"Wohnbereich"}}</span>
+          <mat-icon mat-list-icon>chair</mat-icon>
+        </mat-list-item>
+        <mat-list-item routerLink="/dining" routerLinkActive="active">
+          <span *ngIf="isExpanded || isShowing">{{"Essbereich"}}</span>
+          <mat-icon mat-list-icon>table_restaurant</mat-icon>
+        </mat-list-item>
+        <mat-list-item routerLink="/kitchen" routerLinkActive="active">
+          <span *ngIf="isExpanded || isShowing">{{"Küche"}}</span>
+          <mat-icon mat-list-icon>kitchen</mat-icon>
+        </mat-list-item>
+        <mat-list-item routerLink="/sleeping" routerLinkActive="active">
+          <span *ngIf="isExpanded || isShowing">{{"Schlafzimmer"}}</span>
+          <mat-icon mat-list-icon>bed</mat-icon>
+        </mat-list-item>
+        <mat-list-item routerLink="/dress" routerLinkActive="active">
+          <span *ngIf="isExpanded || isShowing">{{"Ankleidezimmer"}}</span>
+          <mat-icon mat-list-icon>checkroom</mat-icon>
+        </mat-list-item>
+        <mat-list-item routerLink="/work" routerLinkActive="active">
+          <span *ngIf="isExpanded || isShowing">{{"Arbeitszimmer"}}</span>
+          <mat-icon mat-list-icon>work</mat-icon>
+        </mat-list-item>
+        <mat-list-item routerLink="/bath" routerLinkActive="active">
+          <span *ngIf="isExpanded || isShowing">{{"Badezimmer"}}</span>
+          <mat-icon mat-list-icon>bathtub</mat-icon>
+        </mat-list-item>
+      </mat-nav-list>
+      <mat-nav-list>
+      </mat-nav-list>
+    </mat-sidenav>
+    <div class="app-content">
+      <ng-content></ng-content>
+    </div>
+  </mat-sidenav-container>
+</div>
+<div>
+
+</div>

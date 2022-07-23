@@ -14,12 +14,26 @@ import {MatMenuModule} from "@angular/material/menu";
 import {MatTableModule} from "@angular/material/table";
 import {FormsModule} from "@angular/forms";
 import {DashboardComponent} from './dashboard/dashboard.component';
+import {KitchenComponent} from './rooms/kitchen/kitchen.component';
+import {LivingRoomComponent} from './rooms/living-room/living-room.component';
+import {DiningRoomComponent} from './rooms/dining-room/dining-room.component';
+import {BathroomComponent} from './rooms/bathroom/bathroom.component';
+import {BedroomComponent} from './rooms/bedroom/bedroom.component';
+import {WorkspaceComponent} from './rooms/workspace/workspace.component';
+import { DressingRoomComponent } from './rooms/dressing-room/dressing-room.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
-    DashboardComponent
+    DashboardComponent,
+    KitchenComponent,
+    LivingRoomComponent,
+    DiningRoomComponent,
+    BathroomComponent,
+    BedroomComponent,
+    WorkspaceComponent,
+    DressingRoomComponent
   ],
   imports: [
     BrowserModule,

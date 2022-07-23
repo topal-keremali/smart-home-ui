@@ -46,19 +46,19 @@ export class NavigationComponent implements OnInit, OnDestroy {
     const page = this.currentUrl;
     if (page.includes('dashboard') || page === '/') {
       return 'Dashboard';
-    } else if (page.includes('living')) {
+    } else if (page.includes('living-room')) {
       return 'Wohnbereich';
-    } else if (page.includes('dining')) {
+    } else if (page.includes('dining-room')) {
       return 'Essbereich';
     } else if (page.includes('kitchen')) {
       return 'Küche';
-    } else if (page.includes('sleeping')) {
+    } else if (page.includes('bedroom')) {
       return 'Schlafzimmer';
-    } else if (page.includes('dress')) {
+    } else if (page.includes('dressing-room')) {
       return 'Ankleidezimmer';
-    } else if (page.includes('work')) {
+    } else if (page.includes('workspace')) {
       return 'Arbeitszimmer';
-    } else if (page.includes('bath')) {
+    } else if (page.includes('bathroom')) {
       return 'Badezimmer';
     } else return '';
   }

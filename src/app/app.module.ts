@@ -21,6 +21,8 @@ import {BathroomComponent} from './rooms/bathroom/bathroom.component';
 import {BedroomComponent} from './rooms/bedroom/bedroom.component';
 import {WorkspaceComponent} from './rooms/workspace/workspace.component';
 import { DressingRoomComponent } from './rooms/dressing-room/dressing-room.component';
+import { GroundComponent } from './layout/ground/ground.component';
+import { UpperComponent } from './layout/upper/upper.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { DressingRoomComponent } from './rooms/dressing-room/dressing-room.compo
     BathroomComponent,
     BedroomComponent,
     WorkspaceComponent,
-    DressingRoomComponent
+    DressingRoomComponent,
+    GroundComponent,
+    UpperComponent
   ],
   imports: [
     BrowserModule,
